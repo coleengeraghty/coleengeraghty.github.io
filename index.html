@@ -1,0 +1,166 @@
+<!doctype html>
+<html>
+<head>
+<title>
+Coleen Geraghty
+</title>
+<style>
+div{
+z-index:1000;
+}
+</style>
+<link rel="stylesheet" href="animate.css">
+</head>
+<body style="background-color:#e6e6e6">
+
+<div style="padding:30px;position:relative;z-index:100;top:0;left:0;width:100%;height:275px;background-color:#00cc99;box-shadow: 10px 10px;">
+<div style="width:48%;float:left;">
+<h1 style="font-size:70px;text-align:center;">
+Coleen Geraghty
+
+</h1>
+</div>
+<div style="width:45%;float:left;">
+<img src="coleen.jpg" style="float:right;border-radius:50%;width:50%">
+</div>
+
+</div>
+
+<div style="margin:30px;padding:20px;width:90%;box-shadow: 10px 10px;position:relative;top:75%;background-color:white;">
+<h1>
+About Me
+</h1>
+<p style="font-size:25px;">
+I'm an Alaskan girl looking for solutions to ubiquitous human problems that stem from unsustainablity in communities relating to the buildings that make up those communities. I want to influence the wat we think of structure and help to implement a more reliable, sustainable world. Using wholistic approaches that account for people and the environment; if I can make structures that have a net positive impact on their environment and people using the structure than I will feel successful.
+</p>
+</div>
+
+
+<div style="margin:30px;padding:20px;width:90%;box-shadow: 10px 10px;position:relative;top:75%;background-color:white;">
+<h1>
+Achievements & Awards
+</h1>
+<p style="font-size:25px;">
+<b>Final High School GPA:</b> 4.5
+<br>
+<b>Salutatorian</b> (2017)
+<br>
+<b>National AP Scholar and Scholar with Distinction Award</b> (2017)
+<br>
+<b>AP Scholar with Distinction Award</b> (2016)
+<br>
+<b>Athlete of the Week</b> - Awarded by the Frontiersman, week of August 29th (2016) 
+<br>
+<b>Rotary Youth Leadership Award</b> 2016
+<br>
+<b>Employee of the Month</b> June of 2016
+<br>
+<b>Employee of the Month</b> July of 2015
+<br>
+<b>Varisty Athlete</b> 
+</p>
+</div>
+
+
+
+
+<div style="margin:30px;padding:20px;width:90%;box-shadow: 10px 10px;position:relative;top:75%;background-color:white;">
+<h1>
+Volunteerism
+</h1>
+<p style="font-size:25px;">
+<b>Interact  2015-2017</b>
+<br>
+Co-President 2016-2017
+<br>
+Secretary, Head Organizer of Hygiene Drive 2015-2016
+<br>
+<b>National Honor Society  2015-2017</b>
+<br>
+Historian, recording accomplishments, 50 hours of community service -2016
+<br>
+		Member, participated in  50 hours of volunteer work -2015
+<br>
+<b>French National Honor Society ~2015-2017</b>
+</p>
+</div>
+
+<div style="margin:30px;padding:20px;width:90%;box-shadow: 10px 10px;position:relative;top:75%;background-color:white;">
+<h1>
+Education
+</h1>
+<p style="font-size:25px;">
+Full time Civil Engineering Student at the University of New Mexico
+<br>
+Currently taking Matlab and Calculus 3
+<br>
+Enrolled in 18 Credit Hours
+<br>
+Hope to be a member of ASCE, AGC, and UNME
+</p>
+</div>
+
+<div style="margin:30px;padding:20px;width:90%;box-shadow: 10px 10px;position:relative;top:75%;background-color:white;">
+<h1>
+Work Experience
+</h1>
+<p style="font-size:25px;">
+<b>Coldstone Creamery Crew:</b> 2013-2017 Summers
+<br>
+<b>Northstar Bakery:</b> 2016 Summer
+<br>	
+<b>Weddings Alaska Lighting Crew:</b> 2014 Summer</p>
+</div>
+
+
+<div class="slideInRight" style="margin:30px;padding:20px;width:90%;box-shadow: 10px 10px;position:relative;top:75%;background-color:white;">
+<h1>
+Contact Me
+</h1>
+<b>
+<p style="font-size:25px;">
+Coleen Geraghty
+<br>
+<br>
+<a href="mailto:coleengg0@gmail.com">
+coleengg0@gmail.com
+</a>
+<br>
+<br>
+<a href="tel:19076318806">
+1(907)631-8806
+</a>
+</p>
+</b>
+</div>
+<canvas id="backdrop" style="position:fixed;top:0;left:0;width:100%;height:100%;">
+</canvas>
+<script>
+var c = document.getElementById("backdrop");
+var ctx = c.getContext("2d");
+ctx.lineWidth=0.5;
+var x=0;
+var y=0;
+var u=10;
+var w=c.width/u;
+var h=c.height/u
+
+function bd(){
+	ctx.beginPath();
+	ctx.moveTo(x,y);
+		ctx.lineTo(x+w,y+h);
+		ctx.lineTo(x,y+h);
+	ctx.stroke();
+	x=x+w;
+	if(x>=c.width){
+		x=0;
+		y=y+h;
+	}
+	if(y>=c.height){
+		x=0;
+		y=0;
+	}
+}
+</script>
+</body>
+</html>
